@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> Jane Tardo's Portfolio </title>
+        
+        <style>
+            body {
+                background: rgb(88, 139, 131);
+                color: rgb(45, 45, 45);
+                padding: 10px;
+                font-family: arial;
+            }
+            header {
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+            [id=all-contents] {
+                max-width: 800px;
+                margin: auto;
+            }
+
+            /* navigation menu */
+            nav {
+                background: rgb(139, 113, 103);
+                margin: 0 auto;
+                margin-bottom: 20px;
+                display: flex;
+                padding: 10px;
+                border-radius: 20px;
+                border:1px solid #D8BEB4;
+            }
+            nav header {
+                display: flex;
+                align-items: center;
+                color: rgb(255, 255, 255);
+                flex: 1;
+            }
+            nav ul {
+                list-style-image: none;
+            }
+            nav li {
+                display: inline-block;
+                padding: 0 10px;
+            }
+            nav a {
+                text-decoration: none;
+                color: rgb(180, 216, 210);
+                 font-weight: bold;
+            }
+
+            /* main container area beneath menu */
+            main {
+                background: rgb(216, 190, 180);
+                display: flex;
+                border-radius: 20px;
+                border:1px solid #8B7166;
+            }
+            [class=sidebar] {
+                margin-right: 25px;
+                padding: 10px;
+            }
+            [class=sidebar] img {
+                width: 200px;
+                padding:1px;
+                border:1px solid #8B7166;
+                border-radius: 20px;
+                
+            }
+            [class=content] {
+                flex: 1;
+                padding: 15px;
+            }
+            [class=interests] header {
+                font-size: 1.25em;
+            }
+        </style>
+        
+    </head>
+    
+    <body>
+        <div id="all-contents"> 
+            <nav>
+                <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                    </ul>
+                
+            </nav>
+
+            <main>
+                <div class="sidebar">
+                    
+                    <img src ="https://scontent-dft4-2.xx.fbcdn.net/v/t1.0-9/12804832_10101892200222838_8538710264070104594_n.jpg?oh=b6b4b2e0b12cb307e8156a3c3cbf4054&oe=5907BE0D">
+                </div>
+
+                <div class="content">
+                    <header>Jane's Website</header>
+                    
+                
+                    <p>This is a website about me. I'm a human being. </p>
+                    
+                     <section class="interests">
+                        <header>Interests</header>
+                        <ul>
+                            <li>Adventures</li>
+                            <li>Accordions</li>
+                            <li>Avocados</li>
+                        </ul>
+                    </section>
+                    
+                </div>
+            </main>
+            
+        </div>
+        
+    </body>
+</html>
