@@ -372,6 +372,10 @@
         }
         return true;
     };  
+//didn't use each because it's not optimal 
+ 
+
+
 
     /** _.some()
      * Arguments:
@@ -409,7 +413,7 @@
     
     
 
-    /** _.reduce()
+    /** _.reduce() //full array down to single thing 
      * Arguments:
      *   1) An array
      *   2) A function
@@ -433,6 +437,7 @@
          let 
             combined = seed,
             i = 0;
+            
          if(combined === undefined) {
              combined = array[0];
              i = 1;
@@ -460,7 +465,9 @@
      *   _.extend(data, {a:"two"}); -> data now equals {a:"two"}
      */
 
-   _.extend = function(object1, object2, ...theArgs){
+   _.extend = function(object1, object2){
+       let theArgs = arguments;
+       
     for (var keys in object2){
         object1[keys] = object2[keys];
     }
