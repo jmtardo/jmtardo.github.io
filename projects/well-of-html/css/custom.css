@@ -1,0 +1,163 @@
+.drawing-request-form {
+    /* Just to center the form on the page, use: margin: 0 auto;*/
+    margin: 20px;
+    width: 500px;
+    /* To see the outline of the form */
+    padding: 1em;
+    border: 3px solid #3FF511;
+    border-radius: 1em;
+    background-color: #F5E90C;
+    color: #FF7D0C;
+    text-shadow: 3px 2px #0CF5C2;
+    font-weight: bold
+}
+
+.drawing-request-form div + div {
+    margin-top: 1em;
+   
+}
+
+.drawing-request-form label {
+    /* To make sure that all labels have the same size and are properly aligned */
+    display: inline-block;
+    width: 90px;
+     
+}
+
+.drawing-request-form input,
+.drawing-request-form textarea {
+    /* To make sure that all text fields have the same font settings
+    By default, textareas have a monospace font */
+    font: 1em sans-serif;
+    /* To give the same size to all text field */
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /* To harmonize the look & feel of text field border */
+    border: 3px solid #070EFF;
+    background-color: #E8179E;
+}
+
+.drawing-request-form input:focus,
+.drawing-request-form textarea:focus {
+    /* To give a little highlight on active elements */
+    border-color: #0CF5C2;
+}
+
+.drawing-request-form textarea {
+    /* To properly align multiline text fields with their labels */
+    vertical-align: top;
+    /* To give enough room to type some text */
+    height: 5em;
+    /* To allow users to resize any textarea vertically
+    It does not work on every browsers */
+    resize: vertical;
+}
+
+.drawing-request-form button {
+    
+    border-color: #3EF520;
+    color: #E120E8;
+    text-shadow: 3px 2px #0CF5C2;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+
+table {
+   
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+table,
+th,
+td {
+    padding: 7px;
+    border: 1px solid black;
+}
+
+
+ .flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px;
+    padding: 2px;
+}
+
+#pacman {
+  width: 0px;
+  height: 0px;
+  border-right: 60px solid transparent;
+  border-top: 60px solid yellow;
+  border-left: 60px solid yellow;
+  border-bottom: 60px solid yellow;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+
+
+
+.dot {
+	width: 75px;
+	height: 75px;
+	background: blue;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 50px;
+}
+
+#ghost{
+
+  box-shadow:
+    0 0 0 1em green,
+    0 1em 0 1em green,
+    -2.5em 1.5em 0 .5em green,
+    2.5em 1.5em 0 .5em green,
+    -3em -3em 0 0 green,
+    3em -3em 0 0 green,
+    -2em -2em 0 0 green,
+    2em -2em 0 0 green,
+    -3em -1em 0 0 green,
+    -2em -1em 0 0 green,
+    2em -1em 0 0 green,
+    3em -1em 0 0 green,
+    -4em 0 0 0 green,
+    -3em 0 0 0 green,
+    3em 0 0 0 green,
+    4em 0 0 0 green,
+    -5em 1em 0 0 green,
+    -4em 1em 0 0 green,
+    4em 1em 0 0 green,
+    5em 1em 0 0 green,
+    -5em 2em 0 0 green,
+    5em 2em 0 0 green,
+    -5em 3em 0 0 green,
+    -3em 3em 0 0 green,
+    3em 3em 0 0 green,
+    5em 3em 0 0 green,
+    -2em 4em 0 0 green,
+    -1em 4em 0 0 green,
+    1em 4em 0 0 green,
+    2em 4em 0 0 green;
+
+    background: green;
+    width: 1em;
+    height: 1em;
+    overflow: hidden;
+
+    margin: 50px 0 70px 65px;
+  }
+
+
+.lisa-grid {
+    margin: 20px;
+}
+
+.row-img {
+    margin: 4px  ;
+}

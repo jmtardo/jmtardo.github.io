@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/custom.css" type="text/css" />
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bower_components/notes/notes.js"></script>
+    <title>A Well of HTML</title>
+    <style type="text/css">
+
+    </style>
+</head>
+
+<body>
+    <div id="container" class="container">
+        <!-- ALL YOUR MARKUP GOES BELOW HERE -->
+
+        <!-- 0 Anchor (aka Hyperlink) -->
+        <a href="https://en.wikipedia.org/wiki/Lisa_Frank">Lisa Frank</a>
+        <br> <br>
+        <!-- 1.0 Images   -->
+
+        <img src="img/black-currant.jpg" />
+
+        <!--1.1 Headings  -->
+
+
+        <h1>H1</h1>
+        <h2>H2</h2>
+        <h3>H3</h3>
+        <h4>H4</h4>
+        <h5>H5</h5>
+        <h6>H6
+            <small class="text-muted">Bootstrap Small</small>
+        </h6>
+
+        <!--1.2 Paragraphs  -->
+        <!--1.3 Bold, Italics, and Emphasis  -->
+
+        <p>One paragraph is <b>lonely</b></p>
+
+        <p>Two paragraphs is <i>company</i> </p>
+
+        <p>Three paragraphs is a <em>crowd</em></p>
+
+        <!-- 1.4 Lists -->
+
+        <ul>
+            <li>jackalopes</li>
+            <li>unicorns</li>
+            <li>mermaids</li>
+        </ul>
+
+        <ol>
+            <li>dinosaurs</li>
+            <li>trilobites</li>
+            <li>passenger pigeons</li>
+        </ol>
+
+
+        <dl>
+            <dt>Flower</dt>
+            <dd>A very nice thing</dd>
+            <dt>Spider</dt>
+            <dd>A very leggy thing</dd>
+        </dl>
+
+        <!-- 1.5 Forms -->
+
+        <form class="drawing-request-form">
+            <div>
+                <label for="color">Favorite Color:</label>
+                <input type="text" id="color" />
+            </div>
+            <div>
+                <label for="animal">Favorite Animal:</label>
+                <input type="text" id="animal" />
+            </div>
+            <div>
+                <label for="msg">Special Requests:</label>
+                <textarea id="msg"></textarea>
+            </div>
+            <div>
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" />
+            </div>
+
+            <div class="button">
+                <button type="submit">Send your drawing request!</button>
+            </div>
+    </div>
+
+
+    <!-- 1.6 Tables -->
+
+
+            <table>
+                <thead>
+                    <tr>
+
+                        <th colspan="2">
+                            <center>Favorite Emojis</center>
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <th>"Table Flipping" Emoji</th>
+                        <th>"I Don't Know" Emoji</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <center>(╯°□°）╯︵ ┻━┻</center>
+                        </td>
+                        <td>
+                            <center>¯\_(ツ)_/¯</center>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <center>┻━┻︵└(՞▃՞ └)</center>
+                        </td>
+                        <td>
+                            <center> ƪ(•̃͡ε•̃͡)∫</center>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <center>(ノಠ益ಠ)ノ彡┻━┻)</center>
+                        </td>
+                        <td>
+                            <center>┐(°_°)┌</center>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+             <!-- 1.7 Div -->
+             <div><p>Div 1</p></div>
+             
+             <div><p>Div 2</p></div>
+             
+             <div><p>Div 3</p></div>
+             
+             <div><p>Div 4</p></div>
+             
+             <div><p>Div 5</p></div>
+ 
+             <!-- 1.8 Layout -->
+             
+             
+            <div class="flex-row">
+                <div id ="pacman"> </div>
+                <div class = "dot"> </div>
+                <div class = "dot"> </div>
+                <div class = "dot"> </div>
+                <div id = "ghost"> </div>
+            </div>
+            
+            <!-- Bootstrap Grid -->
+
+        <div class="lisa-grid">
+      <div class="row">
+      <div class="col-md-2"><img src="img/banana.png" class="row-img" width="150" height="180" alt="Mr. Banana"></img>
+      </div>
+      <div class="col-md-10">Bananas are tasty things that grow on trees! You can eat them and feel fabulous about yourself!</div>
+  </div>
+  <div class="row">
+      <div class="col-md-2"><img src="img/pumpkin.png" class="row-img" width="150" height="180" alt="Beheaded Pumpkin"></img>
+      </div>
+      <div class="col-md-10">Pumpkins are tasty things that grow on vines! You can eat them and feel mysterious about yourself!</div>
+  </div>
+  <div class="row">
+      <div class="col-md-2"><img src="img/ice-cream.png" class="row-img" width="150" height="180" alt="Space Cream"></img>
+      </div>
+      <div class="col-md-10">Ice creams are tasty things that grow on cows or goats! You can eat them and feel moribund about yourself! They make great floats!</div>
+  </div>
+</div>
+
+    <!-- ALL YOUR MARKUP GOES ABOVE HERE -->
+
+    <script>
+        $(function() {
+            window.opspark.notes.show();
+        });
+    </script>
+</body>
+
+</html>
