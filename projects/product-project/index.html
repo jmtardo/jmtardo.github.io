@@ -1,30 +1,69 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <script src="bower_components/lodash/lodash.min.js"></script>
-        <script src="bower_components/jquery/dist/jquery.min.js"></script>
-        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
-        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="css/custom.css" type="text/css" />
-        <script type="text/javascript" src="bower_components/notes/notes.js"></script>
-        <script type="text/javascript" src="js/lib/spin.min.js"></script>
-        <script type="text/javascript" src="js/view/pacifier.js"></script>
-        <script type="text/javascript" src="js/products.js"></script>
-        <title>Product Project</title>
-    </head>
-    <body>
-        <div id="container" class="container">
-            <nav>
-                <h1>Product Project</h1>
-            </nav>
-            <main>
-            </main>
-        </div>
-        <script>
-            $(function () {
-                window.opspark.notes.show();
-            });
-        </script>
-    </body>
+
+<head>
+    <script src="bower_components/lodash/lodash.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="custom.css" type="text/css" />
+    <script type="text/javascript" src="bower_components/notes/notes.js"></script>
+    <script type="text/javascript" src="js/lib/spin.min.js"></script>
+    <script type="text/javascript" src="js/view/pacifier.js"></script>
+    <script type="text/javascript" src="js/products.js"></script>
+    <title>Product Project</title>
+</head>
+
+<body>
+    <div id="container" class="container">
+        <nav>
+            <h1>Product Project</h1>
+
+
+            <div class="search-bar">
+                <div class="row">
+                    <div class="col-xs-8 col-xs-offset-2">
+                        <div class="input-group">
+                            <div class="input-group-btn search-panel">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        <span id="search_concept">Filter by</span> <span class="caret"></span>
+                    </button>
+                                <ul class="dropdown-menu" role="menu">
+
+                                    <li class="divider"></li>
+
+                                </ul>
+                            </div>
+                            <input type="hidden" name="search_param" value="all" id="search_param">
+                            <input type="text" class="form-control" name="x" placeholder="Search for...">
+                            <span class="input-group-btn">
+                    <button class="btn btn-default" id="search-me-pls" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+        <main>
+            <!--products go here  -->
+
+
+
+
+        </main>
+    </div>
+    <script>
+        // $(function() {
+        //     window.opspark.notes.show();
+        // });
+    </script>
+
+
+
+
+
+</body>
+
 </html>
